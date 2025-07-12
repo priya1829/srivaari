@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security & Audit - Sri Vaari Gold Loan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f7;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to right, #004080, #0066cc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #004080;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #004080, #0066cc);">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard.html">← Back</a>      
+        <div class="d-flex">
+          <a href="index.html" class="btn btn-sm btn-light">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <h2>Sri Vaari Gold Loan</h2>
+    <p class="mb-0">Loan Closure Process</p>
+  </header>
+
+<div class="container mt-4">
+
+  <div class="row">
+    <!-- Authentication -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Password + OTP Login</h5>
+        <p>Enable dual-factor authentication for secure logins.</p>
+        <button class="btn btn-primary btn-sm">Enable OTP</button>
+      </div>
+    </div>
+
+    <!-- Role-Based Access -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Role-Based Access</h5>
+        <p>Show/hide dashboard sections based on user role (Admin, Manager, Teller).</p>
+        <button class="btn btn-primary btn-sm">Manage Roles</button>
+      </div>
+    </div>
+
+    <!-- Activity Logs -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Activity Logs</h5>
+        <p>Track all transactions and logins. Useful for audits.</p>
+        <button class="btn btn-primary btn-sm">View Logs</button>
+      </div>
+    </div>
+
+    <!-- Session Timeout -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Session Timeout</h5>
+        <p>Auto-logout users after inactivity.</p>
+        <select class="form-select">
+          <option>15 mins</option>
+          <option>30 mins</option>
+          <option>1 hour</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Encryption -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Data Encryption</h5>
+        <p>KYC documents and gold item details are securely encrypted.</p>
+        <span class="badge bg-success">Active</span>
+      </div>
+    </div>
+
+    <!-- Audit Trail -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Audit Trail Reports</h5>
+        <p>Generate reports for security audits and reviews.</p>
+        <button class="btn btn-primary btn-sm">Download Audit Report</button>
+      </div>
+    </div>
+
+    <!-- Daily Backup -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Daily Backup</h5>
+        <p>Automatically back up data to cloud and offline storage.</p>
+        <button class="btn btn-primary btn-sm">Backup Now</button>
+      </div>
+    </div>
+
+    <!-- Emergency Restore -->
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5>Emergency Restore</h5>
+        <p>Quick restore in case of system failure.</p>
+        <button class="btn btn-danger btn-sm">Restore Backup</button>
+      </div>
+    </div>
+
+    <!-- Firewall -->
+    <div class="col-md-12">
+      <div class="card p-3">
+        <h5>System Firewall</h5>
+        <p>Protects from unauthorized access and malware attacks.</p>
+        <span class="badge bg-success">Firewall Active</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

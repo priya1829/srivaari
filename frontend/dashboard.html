@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Sri Vaari Gold Loan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f0f4f7;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to right, #004080, #0066cc);
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .dashboard-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .dashboard-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .dashboard-card h5 {
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .dashboard-icon {
+      font-size: 2rem;
+      color: #004080;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #004080, #0066cc);">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sri Vaari Gold Loan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="text-center text-white py-4">
+      <h1>Sri Vaari Gold Loan Billing Software</h1>
+      <p class="lead">Trusted. Secure. Efficient.</p>
+    </div>
+  </header>
+
+  <!-- Dashboard Tiles -->
+  <div class="container">
+    <h3 class="mb-4 text-center">Admin / Manager Dashboard</h3>
+    <div class="row g-4">
+         <div class="col-md-4">
+        <a href="admin-dashboard.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">🏠</div>
+            <h5>Dashboard Overview</h5>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-md-4">
+        <a href="customer-registration.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">👤</div>
+            <h5>Customer Registration</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="loan-issuance.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">💰</div>
+            <h5>Loan Issuance Module</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="loan-receipt.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">🧾</div>
+            <h5>Loan Receipt / Acknowledgement</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="interest-collection.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">💳</div>
+            <h5>Interest / Partial Payment</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="loan-closure.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">🔐</div>
+            <h5>Loan Closure Process</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="reports.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">📊</div>
+            <h5>Reports Module</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="settings.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">⚙️</div>
+            <h5>Settings & Configuration</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="security-audit.html" class="text-decoration-none">
+          <div class="dashboard-card">
+            <div class="dashboard-icon">🔒</div>
+            <h5>Security & Audit</h5>
+          </div>
+        </a>
+      </div>
+
+   
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Sri Vaari Gold Loan | All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

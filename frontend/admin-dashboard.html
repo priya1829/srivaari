@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Sri Vaari Gold Loan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f0f4f7;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(to right, #004080, #0066cc);
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .section-title {
+      font-weight: 600;
+      color: #004080;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    .table thead {
+      background-color: #004080;
+      color: white;
+    }
+
+    .badge-overdue {
+      background-color: #dc3545;
+    }
+
+    .badge-due {
+      background-color: #ffc107;
+      color: #000;
+    }
+
+    .back-btn {
+      position:fixed    ;
+      top: 20px;
+      left: 15px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(to right, #004080, #0066cc);">
+      <div class="container">
+        <a class="navbar-brand" href="dashboard.html">← Back</a>      
+        <div class="d-flex">
+          <a href="index.html" class="btn btn-sm btn-light">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <h2>Sri Vaari Gold Loan</h2>
+    <p class="mb-0">Loan Closure Process</p>
+  </header>
+
+  <!-- Dashboard Cards -->
+  <div class="container mt-4">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Total Active Loans</h5>
+          <h3 id="activeLoans">125</h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Total Amount Disbursed</h5>
+          <h3 id="totalDisbursed">₹ 25,00,000</h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h5>Total Interest Collected</h5>
+          <h3 id="interestCollected">₹ 1,75,000</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Today's Transactions -->
+    <h4 class="section-title">Today's Transactions</h4>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h6>New Loans Issued</h6>
+          <h4 id="newLoansToday">12</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h6>Interest Collections</h6>
+          <h4 id="interestToday">₹ 42,000</h4>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3 text-center">
+          <h6>Closed Loans</h6>
+          <h4 id="closedLoansToday">6</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pending Dues -->
+    <h4 class="section-title">Pending Dues</h4>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Loan ID</th>
+          <th>Customer</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Interest Due</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>LN1001</td>
+          <td>Ravi Kumar</td>
+          <td>25-Jun-2025</td>
+          <td><span class="badge badge-overdue">Overdue</span></td>
+          <td>₹ 1,200</td>
+        </tr>
+        <tr>
+          <td>LN1015</td>
+          <td>Meena S</td>
+          <td>27-Jun-2025</td>
+          <td><span class="badge badge-due">Due Soon</span></td>
+          <td>₹ 950</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Alerts and Reminders -->
+    <h4 class="section-title">Alerts & Reminders</h4>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">📩 SMS sent to 5 overdue accounts today</li>
+      <li class="list-group-item">📧 Email reminders triggered for upcoming due dates</li>
+      <li class="list-group-item">🔔 Maturity alert for 3 accounts sent</li>
+    </ul>
+
+    <!-- Branch-wise Summary -->
+    <h4 class="section-title">Branch-wise Summary</h4>
+    <div class="table-responsive mb-5">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Branch</th>
+            <th>Active Loans</th>
+            <th>Total Disbursed</th>
+            <th>Interest Collected</th>
+            <th>Performance %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chennai</td>
+            <td>58</td>
+            <td>₹ 10,00,000</td>
+            <td>₹ 65,000</td>
+            <td>87%</td>
+          </tr>
+          <tr>
+            <td>Madurai</td>
+            <td>38</td>
+            <td>₹ 8,00,000</td>
+            <td>₹ 55,000</td>
+            <td>79%</td>
+          </tr>
+          <tr>
+            <td>Coimbatore</td>
+            <td>29</td>
+            <td>₹ 7,00,000</td>
+            <td>₹ 48,000</td>
+            <td>81%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="text-center py-4">
+    &copy; 2025 Sri Vaari Gold Loan | All rights reserved
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
