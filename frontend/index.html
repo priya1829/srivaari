@@ -82,6 +82,11 @@
     }
 
     .btn-manager {
+      text-decoration: none;
+      color: #212529;
+      font-weight: 600;
+    }
+     .btn-inactive {
       margin-top: 30px;
       padding: 12px 30px;
       border-radius: 30px;
@@ -92,10 +97,12 @@
       transition: 0.3s;
     }
 
-    .btn-manager:hover {
+    .btn-inactive:hover {
       background: #002f5d;
+      color: #ffffff !important;
     }
 
+   
     footer {
       background-color: #002f5d;
       color: white;
@@ -143,36 +150,37 @@
   <section class="loan-section">
     <div class="container text-center">
       <h2 class="loan-title" data-aos="fade-up">Our Loan Services</h2>
-      <div class="row g-4">
+       <div class="text-center mt-2">
+        <div class="btn btn-inactive" data-aos="fade-up" data-aos-delay="300">Manager Login</div>
+      </div>
+      <div class="row g-4 mt-4">
         <div class="col-md-3 col-sm-6" data-aos="flip-left">
-          <div class="loan-card">
+          <a href="login.html" class="btn-manager"><div class="loan-card">
             <i class="bi bi-coin"></i>
             <h5 class="mt-2">Gold Loan</h5>
-          </div>
+          </div></a>
         </div>
         <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-delay="100">
-          <div class="loan-card">
+           <a href="login.html" class="btn-manager"><div class="loan-card">
             <i class="bi bi-truck-front-fill"></i>
             <h5 class="mt-2">Vehicle Loan</h5>
-          </div>
+          </div></a>
         </div>
         <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-delay="200">
-          <div class="loan-card">
+          <a href="login.html" class="btn-manager"><div class="loan-card">
             <i class="bi bi-file-earmark-text"></i>
             <h5 class="mt-2">Loan on Documents</h5>
           </div>
-        </div>
+        </div></a>
         <div class="col-md-3 col-sm-6" data-aos="flip-left" data-aos-delay="300">
-          <div class="loan-card">
+          <a href="login.html" class="btn-manager"><div class="loan-card">
             <i class="bi bi-person-badge"></i>
             <h5 class="mt-2">Personal Loan</h5>
-          </div>
+          </div></a>
         </div>
       </div>
     </div>
-     <div class="text-center mt-5">
-        <a href="login.html" class="btn btn-manager" data-aos="fade-up" data-aos-delay="300">Manager Login</a>
-      </div>
+    
   </section>
      
 
